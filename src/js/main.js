@@ -1,6 +1,5 @@
 const stickNav = {
   constInit(){
-    console.log(window.scrollY);
     this.nav = document.getElementById('main');
   },
 
@@ -8,13 +7,12 @@ const stickNav = {
     window.addEventListener('scroll', ()=>{
       if(this.nav.offsetTop <= window.scrollY){
         document.body.classList.add('fixed-nav');
-        document.body.style.padding;
       }
 
       if(this.nav.offsetTop >= window.scrollY){
         document.body.classList.remove('fixed-nav');
       }
-    })
+    });
   },
 
   AppInit() {
